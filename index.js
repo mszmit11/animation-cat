@@ -17,10 +17,10 @@ const eyeBackgroundLeft = document.querySelector('.eyeBackgroundLeft')
 const eyeBackgroundRight = document.querySelector('.eyeBackgroundRight')
 const tailAnimation = document.querySelector('.tailAnimation')
 
-audio1 = new Audio('audio/meow1.mp3')
-audio2 = new Audio('audio/meow2.mp3')
-audio3 = new Audio('audio/open.mp3')
-audio4 = new Audio('audio/drinking.mp3')
+audio1 = new Audio('meow1.mp3')
+audio2 = new Audio('meow2.mp3')
+audio3 = new Audio('open.mp3')
+audio4 = new Audio('drinking.mp3')
 count1 = 0
 count2 = 0
 count3 = 0
