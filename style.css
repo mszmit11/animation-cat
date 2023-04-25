@@ -1,615 +1,736 @@
-body{
-    background-color: rgb(255, 223, 175);
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 20px;
+body {
+	background-color: rgb(255, 223, 175);
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 20px;
 }
-p{
-    margin: 10px;
-    padding: 5px;
-    background-color:rgba(255, 255, 255, 0.511);
-    border-radius: 10px;
-    text-align: center;
+p {
+	margin: 10px;
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.511);
+	border-radius: 10px;
+	text-align: center;
 }
-.buttonsComp1{
-    width: 245px;
-    margin-left: auto;
-    text-align: center;
+.buttonsComp1 {
+	width: 245px;
+	margin-left: auto;
+	text-align: center;
 }
-.buttonsComp2{
-    width: 245px;
-    margin-left: auto;
-    text-align: center;
+.buttonsComp2 {
+	width: 245px;
+	margin-left: auto;
+	text-align: center;
 }
-.btn1, .btn2, .btn3, .btn4{
-    background-color: rgb(113, 194, 217);
-    margin: 5px;
-    border-radius: 10px;
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
+	background-color: rgb(113, 194, 217);
+	margin: 5px;
+	border-radius: 10px;
 }
-.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover{
-    cursor: pointer;
-}
-
-.buttonText1{
-    background-color: rgb(113, 194, 217);
-}
-.buttonText2{
-    background-color: rgb(113, 194, 217);
-}
-.buttonText3{
-    background-color: rgb(113, 194, 217);
-}
-.buttonText4{
-    background-color: rgb(113, 194, 217);
-}
-.content{
-    background: url('background-room.jpg');
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition-duration: 1s;
-}
-.contentNight{
-    background: url('background-room-night.jpg');
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition-duration: 1s;
-}
-.bodyCatComponents{
-    width: 200px;
-    height: 300px;
-    position: absolute;
-    top: 32%;
-    left: 23.2%;
-}
-.bodyCat{
-    background-color: rgb(76, 76, 76);
-    width: 135px;
-    height: 190px;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 60px;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-}
-.pawLeft{
-    background-color: rgb(67, 67, 67);
-    width: 35px;
-    height: 50px;
-    top: 64%;
-    left: 26%;
-    transform: translate(-50%, -50%);
-    transform: rotate(-45deg);
-    position: absolute;
-    border-radius: 60px;
-    z-index: 1;
-    transition-duration: 1s;
-}
-.pawLeft:hover{
-    transform: rotate(-90deg);
-    transition-duration: 1s;
-}
-.pawLeftBtn{
-    background-color: rgb(67, 67, 67);
-    width: 35px;
-    height: 50px;
-    top: 64%;
-    left: 26%;
-    transform: translate(-50%, -50%);
-    transform: rotate(-115deg);
-    position: absolute;
-    border-radius: 60px;
-    z-index: 1;
-    transition-duration: 1s;
-}
-.pawRight{
-    background-color: rgb(67, 67, 67);
-    width: 35px;
-    height: 50px;
-    top: 64%;
-    left: 56.5%;
-    transform: translate(-50%, -50%);
-    transform: rotate(45deg);
-    position: absolute;
-    border-radius: 60px;
-    z-index: 1;
-    transition-duration: 1s;
-}
-.pawRight:hover{
-    transform: rotate(90deg);
-    transition-duration: 1s;
-}
-.pawRightBtn{
-    background-color: rgb(67, 67, 67);
-    width: 35px;
-    height: 50px;
-    top: 64%;
-    left: 56.5%;
-    transform: translate(-50%, -50%);
-    transform: rotate(115deg);
-    position: absolute;
-    border-radius: 60px;
-    z-index: 1;
-    transition-duration: 1s;
-}
-.pawRearLeft{
-    background-color: rgb(67, 67, 67);
-    width: 35px;
-    height: 50px;
-    top: 82%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    transform: rotate(-30deg);
-    position: absolute;
-    border-radius: 60px;
-    z-index: 1;
-    transition-duration: 1s;
-}
-.pawRearLeft:hover{
-    transition-duration: 1s;
-    transform: rotate(-10deg);
-}
-.pawRearLeftBtn{
-    background-color: rgb(67, 67, 67);
-    width: 35px;
-    height: 50px;
-    top: 82%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    transform: rotate(-45deg);
-    position: absolute;
-    border-radius: 60px;
-    z-index: 1;
-    transition-duration: 1s;
-}
-.skinPowRL1{
-    background-color: rgb(225, 185, 149);
-    width: 25px;
-    height: 25px;
-    top: 40%;
-    left: 14%;
-    position: absolute;
-    border-radius: 60px;
-    z-index: 1;
-}
-.skinPowRL2{
-    background-color: rgb(225, 185, 149);
-    width: 8px;
-    height: 8px;
-    top: 20%;
-    left: 16%;
-    position: absolute;
-    border-radius: 4px;
-    z-index: 1;
-}
-.skinPowRL3{
-    background-color: rgb(225, 185, 149);
-    width: 8px;
-    height: 8px;
-    top: 13%;
-    left: 43%;
-    position: absolute;
-    border-radius: 4px;
-    z-index: 1;
-}
-.skinPowRL4{
-    background-color: rgb(225, 185, 149);
-    width: 8px;
-    height: 8px;
-    top: 22%;
-    left: 68%;
-    position: absolute;
-    border-radius: 4px;
-    z-index: 1;
-}
-.pawRearRight{
-    background-color: rgb(67, 67, 67);
-    width: 35px;
-    height: 50px;
-    top: 82%;
-    left: 66.5%;
-    transform: translate(-50%, -50%);
-    transform: rotate(30deg);
-    position: absolute;
-    border-radius: 60px;
-    z-index: 1;
-    transition-duration: 1s;
-}
-.pawRearRight:hover{
-    transition-duration: 1s;
-    transform: rotate(10deg);
-}
-.pawRearRightBtn{
-    background-color: rgb(67, 67, 67);
-    width: 35px;
-    height: 50px;
-    top: 82%;
-    left: 66.5%;
-    transform: translate(-50%, -50%);
-    transform: rotate(45deg);
-    position: absolute;
-    border-radius: 60px;
-    z-index: 1;
-    transition-duration: 1s;
-}
-.skinPowRR1{
-    background-color: rgb(225, 185, 149);
-    width: 25px;
-    height: 25px;
-    top: 40%;
-    left: 14%;
-    position: absolute;
-    border-radius: 60px;
-    z-index: 1;
-}
-.skinPowRR2{
-    background-color: rgb(225, 185, 149);
-    width: 8px;
-    height: 8px;
-    top: 20%;
-    left: 16%;
-    position: absolute;
-    border-radius: 4px;
-    z-index: 1;
-}
-.skinPowRR3{
-    background-color: rgb(225, 185, 149);
-    width: 8px;
-    height: 8px;
-    top: 13%;
-    left: 43%;
-    position: absolute;
-    border-radius: 4px;
-    z-index: 1;
-}
-.skinPowRR4{
-    background-color: rgb(225, 185, 149);
-    width: 8px;
-    height: 8px;
-    top: 22%;
-    left: 68%;
-    position: absolute;
-    border-radius: 4px;
-    z-index: 1;
-}
-.tail{
-    width: 150px;
-    height: 150px;
-    background: url('tail.png');
-    top:45%;
-    left:38%;
-    position: absolute;
-    z-index: -3;
-    animation-play-state: paused;
-
-}
-.tailAnimation{
-    width: 150px;
-    height: 150px;
-    background: url('tail.png');
-    top:45%;
-    left:38%;
-    position: absolute;
-    z-index: -3;
-    transition-duration: 1s;
-    animation-name: tailAnimation;
-    animation-duration: 3s;
-    animation-direction: forward;
-    animation-iteration-count: infinite;    
-}
-@keyframes tailAnimation{
-0% {transform: rotate(0deg);}
-50%{transform: rotate(30deg);}
-100% {transform: rotate(0deg);}
-
-}
-.headComponents{
-    width: 200px;
-    height: 180px;
-    position: absolute;
-    top: 35.5%;
-    left: 23.3%;
-    transition-duration: 1s;
-}
-.headComponentsBtn{
-    width: 200px;
-    height: 180px;
-    position: absolute;
-    top: 35.5%;
-    left: 23.3%;
-    transform: rotate(-20deg);
-}
-.headComponents:hover{
-    transform: rotate(20deg);
-    transition-duration: 1s;
-}
-.head{
-    background-color: rgb(67, 67, 67);
-    width: 160px;
-    height: 140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 140px;
-    z-index: 0;
-}
-.earLeft{
-    background-color: rgb(67, 67, 67);
-    width: 60px;
-    height: 60px;
-    top: 5.2%;
-    left: 10%;
-
-    transform: rotate(-90deg);
-    position: absolute;
-    border-radius: 60px 0;
-    z-index: -2;
-}
-.earLeft2{
-    background-color: rgb(106, 106, 106);
-    width: 60px;
-    height: 60px;
-    top: 8%;
-    left: 7%;
-
-    transform: rotate(-80deg);
-    position: absolute;
-    border-radius: 60px 0;
-    z-index: -1;
-}
-.earRight{
-    background-color: rgb(67, 67, 67);
-    width: 60px;
-    height: 60px;
-    top: 5.2%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    transform: rotate(0deg);
-    position: absolute;
-    border-radius: 60px 0;
-    z-index: -2;
-}
-.earRight2{
-    background-color: rgb(106, 106, 106);
-    width: 60px;
-    height: 60px;
-    top: 8%;
-    left: 63%;
-    transform: rotate(-10deg);
-    position: absolute;
-    border-radius: 60px 0;
-    z-index: -1;
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover {
+	cursor: pointer;
 }
 
-.eyeLeft{
-    background-color: rgb(0, 0, 0);
-    width: 15px;
-    height: 15px;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 15px;
-    z-index: 1;
+.buttonText1 {
+	background-color: rgb(113, 194, 217);
 }
-.eyeBackgroundLeft{
-    background-color: rgb(182, 216, 145);
-    width: 30px;
-    height: 30px;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 15px;
+.buttonText2 {
+	background-color: rgb(113, 194, 217);
 }
-.eyeRight{
-    background-color: rgb(0, 0, 0);
-    width: 15px;
-    height: 15px;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 15px; 
-    z-index: 1;
+.buttonText3 {
+	background-color: rgb(113, 194, 217);
 }
-.eyeBackgroundRight{
-    background-color: rgb(182, 216, 145);
-    width: 30px;
-    height: 30px;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 15px; 
+.buttonText4 {
+	background-color: rgb(113, 194, 217);
 }
-.eyeLeftSleep{
-    background-color: rgb(0, 0, 0);
-    width: 30px;
-    height: 30px;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 15px;
-    transition-duration: 1s;
+.content {
+	background: url("image/background-room.jpg");
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition-duration: 1s;
 }
-.eyeRightSleep{
-    background-color: rgb(0, 0, 0);
-    width: 30px;
-    height: 30px;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 15px; 
-    transition-duration: 1s;
+.contentNight {
+	background: url("image/background-room-night.jpg");
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition-duration: 1s;
 }
-.nose{
-    background-color: rgb(66, 31, 11);
-    width: 10px;
-    height: 7px;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 60px;
-    clip-path: polygon(49% 100%, 0 0, 100% 0);
+.bodyCatComponents {
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	top: 32%;
+	left: 23.2%;
 }
-.mouth{
-    background-color: rgb(66, 31, 11);
-    width: 26px;
-    height: 9px;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 60px;
-    transition-duration: 1s;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 40%, 50% 15%, 0 40%, 0% 25%);
+.bodyCat {
+	background-color: rgb(76, 76, 76);
+	width: 135px;
+	height: 190px;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 60px;
+	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
-.mouthBtn{
-    background-color: rgb(66, 31, 11);
-    width: 35px;
-    height: 15px;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 60px;
-    transition-duration: 1s;
-    clip-path: polygon(100% 10%, 50% 35%, 0 10%, 0 0, 50% 25%, 100% 0);
+.pawLeft {
+	background-color: rgb(67, 67, 67);
+	width: 35px;
+	height: 50px;
+	top: 64%;
+	left: 26%;
+	transform: translate(-50%, -50%);
+	transform: rotate(-45deg);
+	position: absolute;
+	border-radius: 60px;
+	z-index: 1;
+	transition-duration: 1s;
 }
-.mouthDrinkingBtn{
-    background-color: rgb(66, 31, 11);
-    width: 34px;
-    height: 15px;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 60px;
-    transition-duration: 1s;
-    clip-path: circle(50%);
+.pawLeft:hover {
+	transform: rotate(-90deg);
+	transition-duration: 1s;
+}
+.pawLeftBtn {
+	background-color: rgb(67, 67, 67);
+	width: 35px;
+	height: 50px;
+	top: 64%;
+	left: 26%;
+	transform: translate(-50%, -50%);
+	transform: rotate(-115deg);
+	position: absolute;
+	border-radius: 60px;
+	z-index: 1;
+	transition-duration: 1s;
+}
+.pawRight {
+	background-color: rgb(67, 67, 67);
+	width: 35px;
+	height: 50px;
+	top: 64%;
+	left: 56.5%;
+	transform: translate(-50%, -50%);
+	transform: rotate(45deg);
+	position: absolute;
+	border-radius: 60px;
+	z-index: 1;
+	transition-duration: 1s;
+}
+.pawRight:hover {
+	transform: rotate(90deg);
+	transition-duration: 1s;
+}
+.pawRightBtn {
+	background-color: rgb(67, 67, 67);
+	width: 35px;
+	height: 50px;
+	top: 64%;
+	left: 56.5%;
+	transform: translate(-50%, -50%);
+	transform: rotate(115deg);
+	position: absolute;
+	border-radius: 60px;
+	z-index: 1;
+	transition-duration: 1s;
+}
+.pawRearLeft {
+	background-color: rgb(67, 67, 67);
+	width: 35px;
+	height: 50px;
+	top: 82%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+	transform: rotate(-30deg);
+	position: absolute;
+	border-radius: 60px;
+	z-index: 1;
+	transition-duration: 1s;
+}
+.pawRearLeft:hover {
+	transition-duration: 1s;
+	transform: rotate(-10deg);
+}
+.pawRearLeftBtn {
+	background-color: rgb(67, 67, 67);
+	width: 35px;
+	height: 50px;
+	top: 82%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+	transform: rotate(-45deg);
+	position: absolute;
+	border-radius: 60px;
+	z-index: 1;
+	transition-duration: 1s;
+}
+.skinPowRL1 {
+	background-color: rgb(225, 185, 149);
+	width: 25px;
+	height: 25px;
+	top: 40%;
+	left: 14%;
+	position: absolute;
+	border-radius: 60px;
+	z-index: 1;
+}
+.skinPowRL2 {
+	background-color: rgb(225, 185, 149);
+	width: 8px;
+	height: 8px;
+	top: 20%;
+	left: 16%;
+	position: absolute;
+	border-radius: 4px;
+	z-index: 1;
+}
+.skinPowRL3 {
+	background-color: rgb(225, 185, 149);
+	width: 8px;
+	height: 8px;
+	top: 13%;
+	left: 43%;
+	position: absolute;
+	border-radius: 4px;
+	z-index: 1;
+}
+.skinPowRL4 {
+	background-color: rgb(225, 185, 149);
+	width: 8px;
+	height: 8px;
+	top: 22%;
+	left: 68%;
+	position: absolute;
+	border-radius: 4px;
+	z-index: 1;
+}
+.pawRearRight {
+	background-color: rgb(67, 67, 67);
+	width: 35px;
+	height: 50px;
+	top: 82%;
+	left: 66.5%;
+	transform: translate(-50%, -50%);
+	transform: rotate(30deg);
+	position: absolute;
+	border-radius: 60px;
+	z-index: 1;
+	transition-duration: 1s;
+}
+.pawRearRight:hover {
+	transition-duration: 1s;
+	transform: rotate(10deg);
+}
+.pawRearRightBtn {
+	background-color: rgb(67, 67, 67);
+	width: 35px;
+	height: 50px;
+	top: 82%;
+	left: 66.5%;
+	transform: translate(-50%, -50%);
+	transform: rotate(45deg);
+	position: absolute;
+	border-radius: 60px;
+	z-index: 1;
+	transition-duration: 1s;
+}
+.skinPowRR1 {
+	background-color: rgb(225, 185, 149);
+	width: 25px;
+	height: 25px;
+	top: 40%;
+	left: 14%;
+	position: absolute;
+	border-radius: 60px;
+	z-index: 1;
+}
+.skinPowRR2 {
+	background-color: rgb(225, 185, 149);
+	width: 8px;
+	height: 8px;
+	top: 20%;
+	left: 16%;
+	position: absolute;
+	border-radius: 4px;
+	z-index: 1;
+}
+.skinPowRR3 {
+	background-color: rgb(225, 185, 149);
+	width: 8px;
+	height: 8px;
+	top: 13%;
+	left: 43%;
+	position: absolute;
+	border-radius: 4px;
+	z-index: 1;
+}
+.skinPowRR4 {
+	background-color: rgb(225, 185, 149);
+	width: 8px;
+	height: 8px;
+	top: 22%;
+	left: 68%;
+	position: absolute;
+	border-radius: 4px;
+	z-index: 1;
+}
+.tail {
+	width: 150px;
+	height: 150px;
+	background: url("image/tail.png");
+	top: 45%;
+	left: 38%;
+	position: absolute;
+	z-index: -3;
+	animation-play-state: paused;
+}
+.tailAnimation {
+	width: 150px;
+	height: 150px;
+	background: url("image/tail.png");
+	top: 45%;
+	left: 38%;
+	position: absolute;
+	z-index: -3;
+	transition-duration: 1s;
+	animation-name: tailAnimation;
+	animation-duration: 3s;
+	animation-direction: forward;
+	animation-iteration-count: infinite;
+}
+@keyframes tailAnimation {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(30deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+.headComponents {
+	width: 200px;
+	height: 180px;
+	position: absolute;
+	top: 35.5%;
+	left: 23.3%;
+	transition-duration: 1s;
+}
+.headComponentsBtn {
+	width: 200px;
+	height: 180px;
+	position: absolute;
+	top: 35.5%;
+	left: 23.3%;
+	transform: rotate(-20deg);
+}
+.headComponents:hover {
+	transform: rotate(20deg);
+	transition-duration: 1s;
+}
+.head {
+	background-color: rgb(67, 67, 67);
+	width: 160px;
+	height: 140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 140px;
+	z-index: 0;
+}
+.earLeft {
+	background-color: rgb(67, 67, 67);
+	width: 60px;
+	height: 60px;
+	top: 5.2%;
+	left: 10%;
+
+	transform: rotate(-90deg);
+	position: absolute;
+	border-radius: 60px 0;
+	z-index: -2;
+}
+.earLeft2 {
+	background-color: rgb(106, 106, 106);
+	width: 60px;
+	height: 60px;
+	top: 8%;
+	left: 7%;
+
+	transform: rotate(-80deg);
+	position: absolute;
+	border-radius: 60px 0;
+	z-index: -1;
+}
+.earRight {
+	background-color: rgb(67, 67, 67);
+	width: 60px;
+	height: 60px;
+	top: 5.2%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	transform: rotate(0deg);
+	position: absolute;
+	border-radius: 60px 0;
+	z-index: -2;
+}
+.earRight2 {
+	background-color: rgb(106, 106, 106);
+	width: 60px;
+	height: 60px;
+	top: 8%;
+	left: 63%;
+	transform: rotate(-10deg);
+	position: absolute;
+	border-radius: 60px 0;
+	z-index: -1;
 }
 
-.drinkItemBtn{
-    background: url('drink.png');
-    width: 40px;
-    height: 80px;
-    position: absolute;
-    top: 55%;
-    left: 40%;
-    z-index: 3;
-    transition-duration: 1s;
+.eyeLeft {
+	background-color: rgb(0, 0, 0);
+	width: 15px;
+	height: 15px;
+	top: 50%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 15px;
+	z-index: 1;
 }
-.drinkingItemBtn{
-    background: url('drink.png');
-    width: 40px;
-    height: 80px;
-    position: absolute;
-    top: 47%;
-    left: 40%;
-    z-index: 3;
-    transition-duration: 1s;
+.eyeBackgroundLeft {
+	background-color: rgb(182, 216, 145);
+	width: 30px;
+	height: 30px;
+	top: 50%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 15px;
 }
-.headSkinLeft{
-    background-color: rgb(129, 111, 101);
-    width: 25px;
-    height: 16px;
-    top: 61%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    transform: rotate(20deg);
-    position: absolute;
-    border-radius: 15px 1px;
-    z-index: 1;
+.eyeRight {
+	background-color: rgb(0, 0, 0);
+	width: 15px;
+	height: 15px;
+	top: 50%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 15px;
+	z-index: 1;
 }
-.headSkinRight{
-    background-color: rgb(129, 111, 101);
-    width: 25px;
-    height: 16px;
-    top: 61%;
-    left: 72%;
-    transform: translate(-50%, -50%);
-    transform: rotate(-20deg);
-    position: absolute;
-    border-radius: 1px 11px;
-    z-index: 1;
+.eyeBackgroundRight {
+	background-color: rgb(182, 216, 145);
+	width: 30px;
+	height: 30px;
+	top: 50%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 15px;
+}
+.eyeLeftSleep {
+	background-color: rgb(0, 0, 0);
+	width: 30px;
+	height: 30px;
+	top: 50%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 15px;
+	transition-duration: 1s;
+}
+.eyeRightSleep {
+	background-color: rgb(0, 0, 0);
+	width: 30px;
+	height: 30px;
+	top: 50%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 15px;
+	transition-duration: 1s;
+}
+.nose {
+	background-color: rgb(66, 31, 11);
+	width: 10px;
+	height: 7px;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 60px;
+	clip-path: polygon(49% 100%, 0 0, 100% 0);
+}
+.mouth {
+	background-color: rgb(66, 31, 11);
+	width: 26px;
+	height: 9px;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 60px;
+	transition-duration: 1s;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 40%, 50% 15%, 0 40%, 0% 25%);
+}
+.mouthBtn {
+	background-color: rgb(66, 31, 11);
+	width: 35px;
+	height: 15px;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 60px;
+	transition-duration: 1s;
+	clip-path: polygon(100% 10%, 50% 35%, 0 10%, 0 0, 50% 25%, 100% 0);
+}
+.mouthDrinkingBtn {
+	background-color: rgb(66, 31, 11);
+	width: 34px;
+	height: 15px;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 60px;
+	transition-duration: 1s;
+	clip-path: circle(50%);
 }
 
-.moustacheLeft1{
-    background-color: black;
-    width: 30px;
-    height: 2px;
-    top: 63%;
-    left: 7%;
-    z-index: 2;
-    position: absolute;
-    transform: rotate(6deg)
+.drinkItemBtn {
+	background: url("image/drink.png");
+	width: 40px;
+	height: 80px;
+	position: absolute;
+	top: 55%;
+	left: 40%;
+	z-index: 3;
+	transition-duration: 1s;
 }
-.moustacheLeft2{
-    background-color: black;
-    width: 30px;
-    height: 2px;
-    top: 65%;
-    left: 6%;
-    z-index: 2;
-    position: absolute;
-    transform: rotate(2deg);
+.drinkingItemBtn {
+	background: url("image/drink.png");
+	width: 40px;
+	height: 80px;
+	position: absolute;
+	top: 47%;
+	left: 40%;
+	z-index: 3;
+	transition-duration: 1s;
 }
-.moustacheLeft3{
-    background-color: black;
-    width: 30px;
-    height: 2px;
-    top: 67%;
-    left: 7%;
-    z-index: 2;
-    position: absolute;
-    transform: rotate(-2deg);
+.headSkinLeft {
+	background-color: rgb(129, 111, 101);
+	width: 25px;
+	height: 16px;
+	top: 61%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+	transform: rotate(20deg);
+	position: absolute;
+	border-radius: 15px 1px;
+	z-index: 1;
 }
-
-.moustacheRight1{
-    background-color: black;
-    width: 30px;
-    height: 2px;
-    top: 64%;
-    left: 77%;
-    z-index: 2;
-    position: absolute;
-    transform: rotate(-2deg);
-}
-.moustacheRight2{
-    background-color: black;
-    width: 30px;
-    height: 2px;
-    top: 66%;
-    left: 78%;
-    z-index: 2;
-    position: absolute;
-    transform: rotate(2deg);
-}
-.moustacheRight3{
-    background-color: black;
-    width: 30px;
-    height: 2px;
-    top: 68%;
-    left: 77%;
-    z-index: 2;
-    position: absolute;
-    transform: rotate(6deg)
+.headSkinRight {
+	background-color: rgb(129, 111, 101);
+	width: 25px;
+	height: 16px;
+	top: 61%;
+	left: 72%;
+	transform: translate(-50%, -50%);
+	transform: rotate(-20deg);
+	position: absolute;
+	border-radius: 1px 11px;
+	z-index: 1;
 }
 
+.moustacheLeft1 {
+	background-color: black;
+	width: 30px;
+	height: 2px;
+	top: 63%;
+	left: 7%;
+	z-index: 2;
+	position: absolute;
+	transform: rotate(6deg);
+}
+.moustacheLeft2 {
+	background-color: black;
+	width: 30px;
+	height: 2px;
+	top: 65%;
+	left: 6%;
+	z-index: 2;
+	position: absolute;
+	transform: rotate(2deg);
+}
+.moustacheLeft3 {
+	background-color: black;
+	width: 30px;
+	height: 2px;
+	top: 67%;
+	left: 7%;
+	z-index: 2;
+	position: absolute;
+	transform: rotate(-2deg);
+}
 
+.moustacheRight1 {
+	background-color: black;
+	width: 30px;
+	height: 2px;
+	top: 64%;
+	left: 77%;
+	z-index: 2;
+	position: absolute;
+	transform: rotate(-2deg);
+}
+.moustacheRight2 {
+	background-color: black;
+	width: 30px;
+	height: 2px;
+	top: 66%;
+	left: 78%;
+	z-index: 2;
+	position: absolute;
+	transform: rotate(2deg);
+}
+.moustacheRight3 {
+	background-color: black;
+	width: 30px;
+	height: 2px;
+	top: 68%;
+	left: 77%;
+	z-index: 2;
+	position: absolute;
+	transform: rotate(6deg);
+}
 
-
-
+@media (max-width: 650px) {
+	body {
+		font-size: 18px;
+	}
+	.content {
+		width: 550px;
+	}
+	.contentNight {
+		width: 550px;
+	}
+	.buttonsComp1 {
+		width: 200px;
+	}
+	.buttonsComp2 {
+		width: 200px;
+	}
+}
+@media (max-width: 600px) {
+	body {
+		font-size: 16px;
+	}
+	.content {
+		width: 500px;
+	}
+	.contentNight {
+		width: 500px;
+	}
+	.buttonsComp1 {
+		width: 150px;
+	}
+	.buttonsComp2 {
+		width: 150px;
+	}
+}
+@media (max-width: 550px) {
+	body {
+		font-size: 14px;
+	}
+	.content {
+		width: 500px;
+	}
+	.contentNight {
+		width: 500px;
+	}
+	.buttonsComp1 {
+		width: 140px;
+	}
+	.buttonsComp2 {
+		width: 140px;
+	}
+}
+@media (max-width: 500px) {
+	body {
+		font-size: 12px;
+	}
+	.content {
+		width: 450px;
+	}
+	.contentNight {
+		width: 450px;
+	}
+	.buttonsComp1 {
+		width: 120px;
+	}
+	.buttonsComp2 {
+		width: 120px;
+	}
+}
+@media (max-width: 450px) {
+	.content {
+		width: 400px;
+	}
+	.contentNight {
+		width: 400px;
+	}
+	.buttonsComp1 {
+		width: 105px;
+	}
+	.buttonsComp2 {
+		width: 105px;
+	}
+}
+@media (max-width: 400px) {
+	.content {
+		width: 350px;
+	}
+	.contentNight {
+		width: 350px;
+	}
+	.buttonsComp1 {
+		width: 90px;
+	}
+	.buttonsComp2 {
+		width: 90px;
+	}
+}
+@media (max-width: 350px) {
+	body {
+		font-size: 11px;
+	}
+	.content {
+		width: 300px;
+	}
+	.contentNight {
+		width: 300px;
+	}
+	.buttonsComp1 {
+		width: 80px;
+		margin: 10px;
+	}
+	.buttonsComp2 {
+		width: 80px;
+		margin: 10px;
+	}
+}
